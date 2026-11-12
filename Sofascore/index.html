@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>EtecScore - Homepage</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body class="homepage">
+    <header>
+        <div class="logo">EtecScore</div>
+        <nav>
+            <a href="./index.html">CENTRAL</a>
+            <a href="./pags/mata-mata.html">MATA-MATA</a>
+            <a href="./pags/lista.html">EQUIPES</a>
+        </nav>
+        <div class="search-box">
+            <input type="text" id="input-pesquisa" placeholder="Pesquisar...">
+        </div>
+    </header>
+
+    <main>
+        <!-- Jogos -->
+        <section>
+            <h2>Jogos</h2>
+            <div id="jogos-container" class="grid-jogos">
+                <!-- Box 1 -->
+                <div class="card-jogo">
+                    <div class="topo-card">
+                        <span class="modalidade">Futsal</span>
+                        <span class="status">Finalizado</span>
+                    </div>
+                    <div class="confronto">
+                        <div class="linha-equipe">
+                            <span class="nome-equipe">Equipe A</span>
+                            <span class="placar">3</span>
+                        </div>
+                        <div class="linha-equipe">
+                            <span class="nome-equipe">Equipe B</span>
+                            <span class="placar">2</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Box 3 -->
+                <div class="card-jogo">
+                    <div class="topo-card">
+                        <span class="modalidade">Futsal</span>
+                        <span class="status">Finalizado</span>
+                    </div>
+                    <div class="confronto">
+                        <div class="linha-equipe">
+                            <span class="nome-equipe">Equipe A</span>
+                            <span class="placar">3</span>
+                        </div>
+                        <div class="linha-equipe">
+                            <span class="nome-equipe">Equipe B</span>
+                            <span class="placar">2</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Box 2 -->
+                <div class="card-jogo">
+                    <div class="topo-card">
+                        <span class="modalidade">Futsal</span>
+                        <span class="status">Finalizado</span>
+                    </div>
+                    <div class="confronto">
+                        <div class="linha-equipe">
+                            <span class="nome-equipe">Equipe A</span>
+                            <span class="placar">3</span>
+                        </div>
+                        <div class="linha-equipe">
+                            <span class="nome-equipe">Equipe B</span>
+                            <span class="placar">2</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Destaques -->
+        <section>
+            <h2>Destaques</h2>
+            <div class="destaques-container">
+
+                <!-- Carrossel de Jogador Destaque -->
+                <div class="destaque-card carrossel-card">
+                    <button class="btn-carousel btn-prev">←</button>
+                    <div class="conteudo-carousel">
+                        <h3>Jogador Destaque</h3>
+                        <div class="conteudo-jogador">
+                            <img id="img-jogador" src="" alt="Foto do Jogador">
+                            <h4 id="nome-jogador">Nome do Jogador</h4>
+                            <div class="stats">
+                                <span><strong id="stat-jogos">00</strong> Jogos</span>
+                                <span><strong id="stat-gols">00</strong> Gols</span>
+                                <span><strong id="stat-assist">00</strong> Assist</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn-carousel btn-next">→</button>
+                </div>
+
+                <!-- Carrossel de Equipe Destaque -->
+                <div class="destaque-card carrossel-card">
+                    <button class="btn-carousel btn-prev">←</button>
+                    <div class="conteudo-carousel">
+                        <h3>Equipe Destaque</h3>
+                        <div class="conteudo-equipe">
+                            <img id="img-equipe" src="" alt="Logo da Equipe">
+                            <h4 id="nome-equipe">Nome da Equipe</h4>
+                            <div class="stats">
+                                <span><strong id="eq-vitorias">00</strong> Vitórias</span>
+                                <span><strong id="eq-derrotas">00</strong> Derrotas</span>
+                                <span><strong id="eq-empates">00</strong> Empates</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn-carousel btn-next">→</button>
+                </div>
+
+                <!-- Tabela de Classificação (Fixa) -->
+                <div class="tabela-card">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>EQUIPE</th>
+                                <th>PTS</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tabela-classificacao-corpo">
+                            
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

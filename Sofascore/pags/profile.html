@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>EtecScore - Profile</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="homepage">
+    <header>
+        <div class="logo">EtecScore</div>
+        <nav>
+            <a href="../index.html">CENTRAL</a>
+            <a href="./mata-mata.html">MATA-MATA</a>
+            <a href="./lista.html">EQUIPES</a>
+        </nav>
+        <div class="search-box">
+            <input type="text" id="input-pesquisa" placeholder="Pesquisar... ⌘K">
+        </div>
+    </header>
+
+    <main>
+        <!-- SEÇÃO: JOGOS RECENTES -->
+        <section>
+            <h2>Jogos</h2>
+            <!-- Container onde o JavaScript vai injetar os cards de partidas dinamicamente -->
+            <div id="jogos-container" class="grid-jogos">
+                <section>
+    <h2>Jogos</h2>
+    <div id="jogos-container" class="grid-jogos">
+        <!-- O JavaScript vai injetar os cards aqui dentro -->
+    </div>
+</section>
+            </div>
+        </section>
+
+        <!-- SEÇÃO: DESTAQUES -->
+        <section>
+            <h2>Destaques</h2>
+            <div class="destaques-container">
+                
+                <!-- Card 1: Jogador Destaque -->
+                <div id="jogador-destaque-card" class="destaque-card">
+                    <h3>Jogador Destaque</h3>
+                    <div class="conteudo-jogador">
+                        <!-- O JS vai preencher imagem, nome e estatísticas -->
+                        <img id="img-jogador" src="" alt="Foto do Jogador">
+                        <h4 id="nome-jogador">Nome do Jogador</h4>
+                        <div class="stats">
+                            <span><strong id="stat-jogos">00</strong> Jogos</span>
+                            <span><strong id="stat-gols">00</strong> Gols</span>
+                            <span><strong id="stat-assist">00</strong> Assist</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2: Equipe Destaque -->
+                <div id="equipe-destaque-card" class="destaque-card">
+                    <h3>Equipe Destaque</h3>
+                    <div class="conteudo-equipe">
+                        <!-- O JS vai preencher logo, nome e estatísticas da equipe -->
+                        <img id="img-equipe" src="" alt="Logo da Equipe">
+                        <h4 id="nome-equipe">Nome da Equipe</h4>
+                        <div class="stats">
+                            <span><strong id="eq-vitorias">00</strong> Vitórias</span>
+                            <span><strong id="eq-derrotas">00</strong> Derrotas</span>
+                            <span><strong id="eq-empates">00</strong> Empates</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3: Tabela de Classificação Resumida -->
+                <div class="tabela-card">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>EQUIPE</th>
+                                <th>PTS</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tabela-classificacao-corpo">
+                            <!-- O JS vai popular as linhas (TR) com base no ranking do banco -->
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Script JavaScript que fará o Fetch na sua API -->
+    <script src="./js/home.js"></script>
+</body>
+</html>
